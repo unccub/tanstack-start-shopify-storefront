@@ -1,0 +1,31 @@
+.link {
+  display: grid;
+  gap: var(--space-3);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+}
+
+.link:hover .title {
+  text-decoration: underline;
+}
+
+.placeholder {
+  aspect-ratio: 1;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.title {
+  font-size: var(--text-lg);
+}
+
+.description {
+  display: -webkit-box;
+  margin-top: var(--space-1);
+  overflow: hidden;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}

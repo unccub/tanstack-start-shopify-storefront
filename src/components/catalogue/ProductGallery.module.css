@@ -1,0 +1,35 @@
+.gallery {
+  display: flex;
+  gap: var(--space-3);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  border-radius: var(--radius-md);
+}
+
+.item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.many .item {
+  flex-basis: 88%;
+}
+
+.placeholder {
+  aspect-ratio: 1;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+@media (min-width: 48rem) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
+  }
+
+  .item:first-child {
+    grid-column: 1 / -1;
+  }
+}

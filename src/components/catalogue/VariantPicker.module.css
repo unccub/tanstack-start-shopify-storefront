@@ -1,0 +1,74 @@
+.picker {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.group {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.label {
+  display: flex;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+.current {
+  color: var(--color-text-muted);
+  font-weight: var(--weight-regular);
+}
+
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.value {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-width: var(--tap-target);
+  min-height: var(--tap-target);
+  padding-inline: var(--space-4);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  text-decoration: none;
+}
+
+.value:hover {
+  background: var(--color-surface);
+}
+
+.selected,
+.selected:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.soldOut {
+  border-style: dashed;
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
+/* A selected value keeps the selected colours when it is also sold out, so the text stays readable. */
+.selected.soldOut {
+  color: var(--color-on-accent);
+}
+
+.elsewhere {
+  border-style: dashed;
+}
+
+.swatch {
+  width: var(--space-4);
+  height: var(--space-4);
+  border: var(--border-width) solid var(--color-border-strong);
+  border-radius: var(--radius-full);
+}

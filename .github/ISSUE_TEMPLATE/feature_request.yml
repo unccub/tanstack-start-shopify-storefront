@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest something the starter should do.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Please check the roadmap and the "What is not included" list in the README first.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: The problem or the use, before the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would like to see
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you have considered
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Would you like to build it
+      options:
+        - label: I can open a pull request for this.

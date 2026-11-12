@@ -1,0 +1,71 @@
+.layout {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.details {
+  display: grid;
+  align-content: start;
+  gap: var(--space-5);
+  min-width: 0;
+}
+
+.heading {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.vendor {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.title {
+  font-size: clamp(var(--text-2xl), 5vw, var(--text-3xl));
+}
+
+.price {
+  font-size: var(--text-xl);
+}
+
+.buy {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.inStock,
+.soldOut {
+  font-size: var(--text-sm);
+}
+
+.inStock {
+  color: var(--color-success);
+}
+
+.soldOut {
+  color: var(--color-text-muted);
+}
+
+.description {
+  display: grid;
+  gap: var(--space-3);
+  padding-top: var(--space-5);
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.descriptionTitle {
+  font-size: var(--text-lg);
+}
+
+@media (min-width: 48rem) {
+  .layout {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: var(--space-7);
+    align-items: start;
+  }
+
+  .details {
+    position: sticky;
+    top: var(--space-5);
+  }
+}

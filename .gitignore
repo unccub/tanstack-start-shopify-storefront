@@ -1,0 +1,12 @@
+node_modules
+dist
+.netlify
+.tanstack
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+test-results
+playwright-report
+.lighthouse

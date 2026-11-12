@@ -1,0 +1,24 @@
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.box {
+  flex: 1 1 18rem;
+  max-width: var(--prose-max);
+}
+
+.sort {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.sortLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+}

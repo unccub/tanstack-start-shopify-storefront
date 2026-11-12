@@ -1,0 +1,57 @@
+.prose {
+  max-width: var(--prose-max);
+  overflow-wrap: anywhere;
+}
+
+.prose > * + * {
+  margin-top: var(--space-4);
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  margin-top: var(--space-6);
+}
+
+.prose h2 {
+  font-size: var(--text-xl);
+}
+
+.prose h3,
+.prose h4 {
+  font-size: var(--text-lg);
+}
+
+.prose ul,
+.prose ol {
+  padding-inline-start: var(--space-5);
+}
+
+.prose li + li {
+  margin-top: var(--space-1);
+}
+
+.prose img {
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.prose table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.prose th,
+.prose td {
+  padding: var(--space-2) var(--space-3);
+  border: var(--border-width) solid var(--color-border);
+  text-align: start;
+}
+
+.prose blockquote {
+  padding-inline-start: var(--space-4);
+  border-inline-start: var(--space-1) solid var(--color-border);
+  color: var(--color-text-muted);
+}

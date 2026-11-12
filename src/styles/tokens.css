@@ -1,0 +1,108 @@
+/* Every design value lives here. Rebrand by editing this one file. */
+
+:root {
+  color-scheme: light dark;
+
+  /* Colour: light scheme */
+  --color-bg: #ffffff;
+  --color-surface: #f5f5f4;
+  --color-surface-strong: #e7e5e4;
+  --color-text: #171717;
+  --color-text-muted: #57534e;
+  --color-border: #d6d3d1;
+  --color-border-strong: #78716c;
+  --color-accent: #171717;
+  --color-accent-hover: #3f3f46;
+  --color-on-accent: #ffffff;
+  --color-focus: #1d4ed8;
+  --color-danger: #b91c1c;
+  --color-success: #15803d;
+  --color-sale: #b91c1c;
+  --color-overlay: rgb(0 0 0 / 0.5);
+
+  /* Type */
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
+  --leading-tight: 1.15;
+  --leading-normal: 1.55;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 650;
+  --tracking-tight: -0.02em;
+  --tracking-wide: 0.06em;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  /* Layout */
+  --page-max: 80rem;
+  --page-gutter: clamp(1rem, 4vw, 2.5rem);
+  --prose-max: 42rem;
+  --header-height: 4rem;
+  --drawer-width: 26rem;
+  --tap-target: 2.75rem;
+
+  /* Shape */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 999px;
+  --border-width: 1px;
+  --focus-width: 2px;
+  --focus-offset: 2px;
+
+  /* Depth */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.08);
+  --shadow-md: 0 8px 24px rgb(0 0 0 / 0.12);
+  --shadow-lg: 0 24px 48px rgb(0 0 0 / 0.2);
+
+  /* Motion: transform and opacity only */
+  --duration-fast: 120ms;
+  --duration-normal: 220ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Stacking */
+  --z-header: 10;
+  --z-overlay: 20;
+  --z-drawer: 30;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0c0a09;
+    --color-surface: #1c1917;
+    --color-surface-strong: #292524;
+    --color-text: #fafaf9;
+    --color-text-muted: #a8a29e;
+    --color-border: #44403c;
+    --color-border-strong: #a8a29e;
+    --color-accent: #fafaf9;
+    --color-accent-hover: #d6d3d1;
+    --color-on-accent: #0c0a09;
+    --color-focus: #93c5fd;
+    --color-danger: #fca5a5;
+    --color-success: #86efac;
+    --color-sale: #fca5a5;
+    --color-overlay: rgb(0 0 0 / 0.7);
+
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.5);
+    --shadow-md: 0 8px 24px rgb(0 0 0 / 0.6);
+    --shadow-lg: 0 24px 48px rgb(0 0 0 / 0.7);
+  }
+}

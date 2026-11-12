@@ -1,0 +1,49 @@
+name: Bug report
+description: Something in the starter does not work as it should.
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what you saw instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run `npm run dev`
+        2. Open /products/men-crewneck
+        3. …
+    validations:
+      required: true
+  - type: dropdown
+    id: store
+    attributes:
+      label: Which store was it talking to
+      options:
+        - mock.shop (no env file)
+        - A real store, without a token
+        - A real store, with a private token
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Node version
+      placeholder: "22.12.0"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and operating system
+      placeholder: Safari 19 on macOS
+  - type: textarea
+    id: logs
+    attributes:
+      label: Errors or logs
+      description: Terminal or browser console output. Remove any tokens or store details first.
+      render: shell
